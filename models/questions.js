@@ -42,10 +42,10 @@ function getQuizQuestions() {
             return data.map(q => {
                 const data = q.toObject();
                 const answer = data.correct_answer;
-                delete data.correct_answer;
-                data.question_possibilities.push({
-                    answer
-                });
+                // delete data.correct_answer;
+                // data.question_possibilities.push({
+                //     answer
+                // });
                 data.question_possibilities = data.question_possibilities
                     .map(q => ({
                         answer: q.answer
